@@ -16,5 +16,38 @@ namespace Calc142
         {
             InitializeComponent();
         }
+
+        private void plus_Click(object sender, EventArgs e)
+        {
+            double firstArg = Convert.ToDouble(TextIn1.Text);
+            double secondArg = Convert.ToDouble(TextIn2.Text);
+            double result = firstArg + secondArg;
+            labelResult.Text = result.ToString();
+        }
+
+        private void minus_Click(object sender, EventArgs e)
+        {
+            double firstArg = Convert.ToDouble(TextIn1.Text);
+            double secondArg = Convert.ToDouble(TextIn2.Text);
+            double result = firstArg - secondArg;
+            labelResult.Text = result.ToString();
+        }
+
+        private void multiply_Click(object sender, EventArgs e)
+        {
+            double firstArg = Convert.ToDouble(TextIn1.Text);
+            double secondArg = Convert.ToDouble(TextIn2.Text);
+            double result = firstArg * secondArg;
+            labelResult.Text = result.ToString();
+        }
+
+        private void divide_Click(object sender, EventArgs e)
+        {
+            double firstArg = Convert.ToDouble(TextIn1.Text);
+            double secondArg = Convert.ToDouble(TextIn2.Text);
+            double result = firstArg / secondArg;
+            labelResult.Text = result.ToString();
+        }
+
     }
 }
