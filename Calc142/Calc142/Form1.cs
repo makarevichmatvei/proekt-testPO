@@ -23,24 +23,8 @@ namespace Calc142
         {
             double firstArg = Convert.ToDouble(TextIn1.Text);
             double secondArg = Convert.ToDouble(TextIn2.Text);
-            double result;
-            switch (((Button) sender).Name)
-            {
-                case "plus":
-                    result = firstArg + secondArg;
-                    break;
-                case "minus":
-                    result = firstArg - secondArg;
-                    break;
-                case "multiply":
-                    result = firstArg * secondArg;
-                    break;
-                case "divide":
-                    result = firstArg / secondArg;
-                    break;
-                default:
-                    throw new Exception("Неизвестная операция");
-            }
+            ITwoArgCalc calculator = CalculatorsFactory.CreateCalculator(((Button)sender).Name);
+            double result = calculator.Calculate(firstArg, secondArg);
             labelResult.Text = result.ToString();
         }
     }
