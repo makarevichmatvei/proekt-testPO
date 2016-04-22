@@ -27,5 +27,13 @@ namespace Calc142
             double result = calculator.Calculate(firstArg, secondArg);
             labelResult.Text = result.ToString();
         }
+        private void OneClick(object sender, EventArgs e)
+        {
+            double firstArg = Convert.ToDouble(TextIn1.Text);
+            IOneArgCalc calculator = OneCalculatorsFactory.CreateCalculator(((Button)sender).Name);
+            double result = calculator.Calculate(firstArg);
+            labelResult.Text = result.ToString();
+        }
+
     }
 }

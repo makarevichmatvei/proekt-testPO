@@ -35,11 +35,20 @@
             this.divide = new System.Windows.Forms.Button();
             this.labelResult = new System.Windows.Forms.Label();
             this.TextIn2 = new System.Windows.Forms.TextBox();
+            this.Sin = new System.Windows.Forms.Button();
+            this.Cos = new System.Windows.Forms.Button();
+            this.Power = new System.Windows.Forms.Button();
+            this.Exp = new System.Windows.Forms.Button();
+            this.Sqrt = new System.Windows.Forms.Button();
+            this.Percent = new System.Windows.Forms.Button();
+            this.Tangent = new System.Windows.Forms.Button();
+            this.Logorifm = new System.Windows.Forms.Button();
+            this.NatLog = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TextIn1
             // 
-            this.TextIn1.Location = new System.Drawing.Point(13, 13);
+            this.TextIn1.Location = new System.Drawing.Point(12, 13);
             this.TextIn1.Name = "TextIn1";
             this.TextIn1.Size = new System.Drawing.Size(100, 20);
             this.TextIn1.TabIndex = 0;
@@ -100,11 +109,110 @@
             this.TextIn2.Size = new System.Drawing.Size(100, 20);
             this.TextIn2.TabIndex = 7;
             // 
+            // Sin
+            // 
+            this.Sin.Location = new System.Drawing.Point(14, 101);
+            this.Sin.Name = "Sin";
+            this.Sin.Size = new System.Drawing.Size(40, 30);
+            this.Sin.TabIndex = 8;
+            this.Sin.Text = "sin";
+            this.Sin.UseVisualStyleBackColor = true;
+            this.Sin.Click += new System.EventHandler(this.OneClick);
+            // 
+            // Cos
+            // 
+            this.Cos.Location = new System.Drawing.Point(60, 101);
+            this.Cos.Name = "Cos";
+            this.Cos.Size = new System.Drawing.Size(40, 30);
+            this.Cos.TabIndex = 9;
+            this.Cos.Text = "cos";
+            this.Cos.UseVisualStyleBackColor = true;
+            this.Cos.Click += new System.EventHandler(this.OneClick);
+            // 
+            // Power
+            // 
+            this.Power.Location = new System.Drawing.Point(106, 101);
+            this.Power.Name = "Power";
+            this.Power.Size = new System.Drawing.Size(40, 30);
+            this.Power.TabIndex = 10;
+            this.Power.Text = "^";
+            this.Power.UseVisualStyleBackColor = true;
+            this.Power.Click += new System.EventHandler(this.Click);
+            // 
+            // Exp
+            // 
+            this.Exp.Location = new System.Drawing.Point(152, 101);
+            this.Exp.Name = "Exp";
+            this.Exp.Size = new System.Drawing.Size(40, 30);
+            this.Exp.TabIndex = 11;
+            this.Exp.Text = "exp";
+            this.Exp.UseVisualStyleBackColor = true;
+            this.Exp.Click += new System.EventHandler(this.OneClick);
+            // 
+            // Sqrt
+            // 
+            this.Sqrt.Location = new System.Drawing.Point(198, 101);
+            this.Sqrt.Name = "Sqrt";
+            this.Sqrt.Size = new System.Drawing.Size(40, 30);
+            this.Sqrt.TabIndex = 12;
+            this.Sqrt.Text = "√";
+            this.Sqrt.UseVisualStyleBackColor = true;
+            this.Sqrt.Click += new System.EventHandler(this.OneClick);
+            // 
+            // Percent
+            // 
+            this.Percent.Location = new System.Drawing.Point(14, 137);
+            this.Percent.Name = "Percent";
+            this.Percent.Size = new System.Drawing.Size(40, 30);
+            this.Percent.TabIndex = 14;
+            this.Percent.Text = "%";
+            this.Percent.UseVisualStyleBackColor = true;
+            this.Percent.Click += new System.EventHandler(this.Click);
+            // 
+            // Tangent
+            // 
+            this.Tangent.Location = new System.Drawing.Point(60, 137);
+            this.Tangent.Name = "Tangent";
+            this.Tangent.Size = new System.Drawing.Size(40, 30);
+            this.Tangent.TabIndex = 15;
+            this.Tangent.Text = "tan";
+            this.Tangent.UseVisualStyleBackColor = true;
+            this.Tangent.Click += new System.EventHandler(this.OneClick);
+            // 
+            // Logorifm
+            // 
+            this.Logorifm.Location = new System.Drawing.Point(106, 137);
+            this.Logorifm.Name = "Logorifm";
+            this.Logorifm.Size = new System.Drawing.Size(40, 30);
+            this.Logorifm.TabIndex = 16;
+            this.Logorifm.Text = "log";
+            this.Logorifm.UseVisualStyleBackColor = true;
+            this.Logorifm.Click += new System.EventHandler(this.OneClick);
+            // 
+            // NatLog
+            // 
+            this.NatLog.Location = new System.Drawing.Point(152, 137);
+            this.NatLog.Name = "NatLog";
+            this.NatLog.Size = new System.Drawing.Size(40, 30);
+            this.NatLog.TabIndex = 17;
+            this.NatLog.Text = "ln";
+            this.NatLog.UseVisualStyleBackColor = true;
+            this.NatLog.Click += new System.EventHandler(this.OneClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.NatLog);
+            this.Controls.Add(this.Logorifm);
+            this.Controls.Add(this.Tangent);
+            this.Controls.Add(this.Percent);
+            this.Controls.Add(this.Sqrt);
+            this.Controls.Add(this.Exp);
+            this.Controls.Add(this.Power);
+            this.Controls.Add(this.Cos);
+            this.Controls.Add(this.Sin);
             this.Controls.Add(this.TextIn2);
             this.Controls.Add(this.labelResult);
             this.Controls.Add(this.divide);
@@ -128,6 +236,15 @@
         private System.Windows.Forms.Button divide;
         private System.Windows.Forms.Label labelResult;
         private System.Windows.Forms.TextBox TextIn2;
+        private System.Windows.Forms.Button Sin;
+        private System.Windows.Forms.Button Cos;
+        private System.Windows.Forms.Button Power;
+        private System.Windows.Forms.Button Exp;
+        private System.Windows.Forms.Button Sqrt;
+        private System.Windows.Forms.Button Percent;
+        private System.Windows.Forms.Button Tangent;
+        private System.Windows.Forms.Button Logorifm;
+        private System.Windows.Forms.Button NatLog;
     }
 }
 

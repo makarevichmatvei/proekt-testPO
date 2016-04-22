@@ -19,7 +19,14 @@ namespace Calc142
                   
                 case "divide":
                  return new Divide();
-                   
+
+                case "Power":
+                 return new Power();
+
+                case "Percent":
+                 return new Percent();
+                
+
                 default:
                     throw new Exception("Неизвестная операция");
             }
