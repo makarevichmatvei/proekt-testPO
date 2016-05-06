@@ -2,7 +2,7 @@
 
 namespace Calc142
 {
-    public class NatLog : IOneArgCalc
+    public class Log10 : IOneArgCalc
     {
         public double Calculate(double firstArg)
         {

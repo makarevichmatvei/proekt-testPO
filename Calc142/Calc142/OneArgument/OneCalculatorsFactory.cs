@@ -23,13 +23,8 @@ namespace Calc142
                 case "Tangent":
                     return new Tangent();
 
-               
-
-                case "Logorifm":
-                    return new Logorifm();
-
-                case "NatLog":
-                    return new NatLog();
+                case "Log10":
+                    return new Log10();
 
                 default:
                     throw new Exception("Неизвестная операция");

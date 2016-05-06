@@ -10,7 +10,7 @@ namespace Calc142
             {
                 case "plus":
                     return new Plus();
-                    
+
                 case "minus":
                     return new Minus();
                    
@@ -25,6 +25,9 @@ namespace Calc142
 
                 case "Percent":
                  return new Percent();
+
+                case "Logorifm":
+                 return new Logorifm();
                 
 
                 default:

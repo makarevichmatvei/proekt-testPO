@@ -43,7 +43,7 @@
             this.Percent = new System.Windows.Forms.Button();
             this.Tangent = new System.Windows.Forms.Button();
             this.Logorifm = new System.Windows.Forms.Button();
-            this.NatLog = new System.Windows.Forms.Button();
+            this.Log10 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TextIn1
@@ -187,24 +187,24 @@
             this.Logorifm.TabIndex = 16;
             this.Logorifm.Text = "log";
             this.Logorifm.UseVisualStyleBackColor = true;
-            this.Logorifm.Click += new System.EventHandler(this.OneClick);
+            this.Logorifm.Click += new System.EventHandler(this.Click);
             // 
-            // NatLog
+            // Log10
             // 
-            this.NatLog.Location = new System.Drawing.Point(152, 137);
-            this.NatLog.Name = "NatLog";
-            this.NatLog.Size = new System.Drawing.Size(40, 30);
-            this.NatLog.TabIndex = 17;
-            this.NatLog.Text = "ln";
-            this.NatLog.UseVisualStyleBackColor = true;
-            this.NatLog.Click += new System.EventHandler(this.OneClick);
+            this.Log10.Location = new System.Drawing.Point(152, 137);
+            this.Log10.Name = "Log10";
+            this.Log10.Size = new System.Drawing.Size(40, 30);
+            this.Log10.TabIndex = 17;
+            this.Log10.Text = "ln10";
+            this.Log10.UseVisualStyleBackColor = true;
+            this.Log10.Click += new System.EventHandler(this.OneClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.NatLog);
+            this.Controls.Add(this.Log10);
             this.Controls.Add(this.Logorifm);
             this.Controls.Add(this.Tangent);
             this.Controls.Add(this.Percent);
@@ -244,7 +244,7 @@
         private System.Windows.Forms.Button Percent;
         private System.Windows.Forms.Button Tangent;
         private System.Windows.Forms.Button Logorifm;
-        private System.Windows.Forms.Button NatLog;
+        private System.Windows.Forms.Button Log10;
     }
 }
 
